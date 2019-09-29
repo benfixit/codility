@@ -30,7 +30,7 @@ function swap(arr, firstIndex, secondIndex){
     arr[secondIndex] = temp;
 }
 
-function experimentalReverseArray(arr){
+function reverseArrayImproved(arr){
     const midPoint = Math.floor(arr.length/2);
     const bar = midPoint - 1;
     const arrLength = arr.length
@@ -69,7 +69,7 @@ const start = new Date().getTime()
 console.log('\n\n!!!Starting Array Reversal!!!')
 
 console.log('\n\n:::Reversed Array:::')
-displayArray(experimentalReverseArray(arr))
+displayArray(reverseArrayImproved(arr))
 const end = new Date().getTime()
 const timeSpent = end - start;
 console.log(`${timeSpent} ms`)
